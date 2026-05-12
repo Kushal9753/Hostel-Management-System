@@ -177,7 +177,7 @@ npm run dev
 4. Start command: \`npm start\`
 
 ### Frontend (Vercel, Netlify, etc.)
-1. Add the Client environment variable: \`VITE_API_URL=https://your-deployed-backend-url.com\`
+1. Add the Client environment variable: \`VITE_API_URL=https://hostel-management-system-xk2v.onrender.com\`
 2. Build command: \`npm run build\`
 3. Output directory: \`dist\`
 4. **Important:** Add a rewrite rule for Single Page Applications (SPA) so that all routes point to \`index.html\`.
