@@ -85,7 +85,7 @@ sidlabproject/
 
 ### 1. Clone the Repository
 \`\`\`bash
-git clone https://github.com/yourusername/sidlabproject.git
+git clone https://github.com/Kushal9753/Hostel-Management-System.git
 cd sidlabproject
 \`\`\`
 
