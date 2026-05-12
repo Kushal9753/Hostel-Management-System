@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import showToast from '../utils/toast';
 
@@ -79,6 +79,11 @@ const AdminLogin = () => {
               {loading ? 'Authenticating...' : 'Access Dashboard'}
             </button>
           </form>
+        </div>
+        <div className="bg-gray-800/50 px-8 py-4 border-t border-gray-800 text-center">
+          <Link to="/login" className="text-sm text-gray-400 hover:text-gray-200 font-medium transition-colors">
+            &larr; Student Portal Login
+          </Link>
         </div>
       </div>
     </div>
