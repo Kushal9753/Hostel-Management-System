@@ -24,9 +24,9 @@ import StudentLayout from './layouts/StudentLayout';
 import { Toaster } from 'react-hot-toast';
 
 // Layout wrapper for public pages (with Navbar)
-const PublicLayout = ({ children }) => (
+const PublicLayout = ({ children, showNavbar = true }) => (
   <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300 flex flex-col font-sans text-slate-900 dark:text-slate-100">
-    <Navbar />
+    {showNavbar && <Navbar />}
     <main className="flex-grow container mx-auto px-4 py-8">
       {children}
     </main>
@@ -57,9 +57,9 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
-          <Route path="/login" element={<PublicLayout><Login /></PublicLayout>} />
-          <Route path="/register" element={<PublicLayout><Register /></PublicLayout>} />
-          <Route path="/admin-login" element={<PublicLayout><AdminLogin /></PublicLayout>} />
+          <Route path="/login" element={<PublicLayout showNavbar={false}><Login /></PublicLayout>} />
+          <Route path="/register" element={<PublicLayout showNavbar={false}><Register /></PublicLayout>} />
+          <Route path="/admin-login" element={<PublicLayout showNavbar={false}><AdminLogin /></PublicLayout>} />
 
           {/* Protected Student Routes with Sidebar Layout */}
           <Route 

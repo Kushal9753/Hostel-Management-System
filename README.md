@@ -123,7 +123,8 @@ CLOUDINARY_API_SECRET=your_api_secret
 ### Client ( \`client/.env\` )
 Create a \`.env\` file in the \`client\` directory:
 \`\`\`env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=VITE_API_URL=https://hostel-management-system-xk2v.onrender.com
+
 \`\`\`
 
 ---
@@ -183,25 +184,7 @@ npm run dev
 
 ---
 
-## 🔮 Future Improvements
 
-- **Payment Gateway Integration:** Implement Stripe/Razorpay for processing online hostel fee payments and tracking dues.
-- **Automated Notifications:** Integrate email (Nodemailer) or SMS alerts for leave approvals and complaint status changes.
-- **Notice Board System:** Create an admin-controlled digital notice board for global hostel announcements.
-- **Staff Management Module:** Extend the system to manage hostel staff (wardens, cleaning staff, maintenance).
-- **Mess/Canteen Management:** Add a module for managing daily meal menus, attendance, and dietary preferences.
-
----
-
-## 👤 Author
-
-Developed with ❤️ by **Kushal Sahu**.
-
-- GitHub: [@kushalsahu](https://github.com/kushalsahu)
-- Portfolio: [Your Portfolio Link](#)
-- LinkedIn: [Your LinkedIn Profile](#)
-
----
 <div align="center">
   <i>If you found this project helpful, please consider giving it a ⭐ on GitHub!</i>
 </div>
